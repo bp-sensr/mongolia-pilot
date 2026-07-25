@@ -16,7 +16,7 @@ editor: visual
 bibliography: references2.bib
 nocite: '@*'
 toc: true
-toc-depth: 3
+toc-depth: 4
 toc-expand: true
 toc-location: left
 github: https://github.com/bp-sensr/mongolia-pilot
@@ -130,31 +130,33 @@ For this pilot, use the default schedules provided in the [Songmeter Configurato
 
 ![ARU status screen](status-screen.png)
 
-Once you have paired the next step is to set a schedule. For this pilot, select **Record birds/frogs for 5 minutes of every hour**. At this setting:
-
-- The recorder has roughly **35 recording days** before the SD card fills up.
-- The batteries should last approximately **5 months** in the field.
-
-![Schedule editor](schedule-editor.png)
+Once you have paired the next step is to set a schedule. For this pilot, select **Record birds/frogs for 5 minutes of every hour**. We will not change any of the settings related to frequency range (kHz) or gain (dB) as they are already optimized for bioacoustic and soundscape data collection. Units have also been calibrating prior to deployment by [SENSR](https://sensr.ca) staff.
 
 ::: callout-tip
 ## Why this schedule
 
 Five minutes per hour balances data volume against battery and data storage limits, while still sampling activity across the full diel cycle, which is useful for a first pilot where deployment length, species and retrieval logistics aren't yet fully known.
+
+- The recorder has roughly **35 recording days** before a 32GB SD card fills up.
+- 8 AA alkaline batteries should last approximately **5 months** in the field.
 :::
+
+
+
+![Schedule editor](schedule-editor.png)
 
 ### Site selection and mounting
 
-**Open, treeless environment:**
+#### Open, treeless environment
 
 - Mount the ARU on a wooden stake or metal rebar, driven at least **1/3 of its length** into the ground to keep it stable.
-- Position the unit **0.5–1 m above the ground** — high enough to reduce wind interference with the microphones.
+- Position the unit **0.5-1 m above the ground** high enough to reduce wind interference with the microphones.
 - Orient the microphones **against the direction of prevailing wind** to reduce wind noise in recordings.
 - In areas where wildlife may disturb the unit, a metal security cage can be used (@ABMI2019ARUProtocols).
 
 ![Example deployment setup in an open environment using agronomy cages to protect the unit against livestock damage.](deploy-open.png)
 
-**Treed environment:**
+#### Treed environment
 
 - Secure the unit to the trunk with screws or a locking security cable.
 - Mount at **1.5 m height**, facing **north**, this is the standard orientation used across the pilot, making it easier to compare recordings and determine sound direction across sites and also limits direct sun exposure on the unit in the norther hemisphere.
@@ -179,7 +181,7 @@ A third option exists if ARUs are deployed in wetland environments (@ABMI2019ARU
 1.  Open the unit's lid and press and hold the **Bluetooth pairing button**.
 2.  Open the Configurator app and locate the unit to re-pair.
 3.  Check **battery level** and **SD card usage** to confirm recordings were captured successfully.
-4.  **Turn the unit off before removing the SD card** — always power down first to avoid file corruption.
+4.  **Turn the unit off before removing the SD card**, always power down first to avoid file corruption.
 5.  Disassemble the unit from its mount (stake or tree), whichever setup was used.
 
 ::: callout-warning

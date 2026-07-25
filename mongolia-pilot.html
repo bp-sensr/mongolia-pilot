@@ -78,16 +78,20 @@ div.csl-indent {
   <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#understand" id="toc-understand" class="nav-link" data-scroll-target="#understand">Understand</a></li>
   <li><a href="#deploy" id="toc-deploy" class="nav-link" data-scroll-target="#deploy">Deploy</a>
-  <ul class="collapse">
+  <ul>
   <li><a href="#gear-checklist" id="toc-gear-checklist" class="nav-link" data-scroll-target="#gear-checklist">Gear Checklist</a></li>
   <li><a href="#pairing-an-aru-to-the-configurator-app" id="toc-pairing-an-aru-to-the-configurator-app" class="nav-link" data-scroll-target="#pairing-an-aru-to-the-configurator-app">Pairing an ARU to the Configurator App</a></li>
   <li><a href="#choose-a-schedule" id="toc-choose-a-schedule" class="nav-link" data-scroll-target="#choose-a-schedule">Choose a schedule</a></li>
-  <li><a href="#site-selection-and-mounting" id="toc-site-selection-and-mounting" class="nav-link" data-scroll-target="#site-selection-and-mounting">Site selection and mounting</a></li>
+  <li><a href="#site-selection-and-mounting" id="toc-site-selection-and-mounting" class="nav-link" data-scroll-target="#site-selection-and-mounting">Site selection and mounting</a>
+  <ul class="collapse">
+  <li><a href="#open-treeless-environment" id="toc-open-treeless-environment" class="nav-link" data-scroll-target="#open-treeless-environment">Open, treeless environment</a></li>
+  <li><a href="#treed-environment" id="toc-treed-environment" class="nav-link" data-scroll-target="#treed-environment">Treed environment</a></li>
+  </ul></li>
   <li><a href="#finalize-the-deployment" id="toc-finalize-the-deployment" class="nav-link" data-scroll-target="#finalize-the-deployment">Finalize the deployment</a></li>
   </ul></li>
   <li><a href="#retrieve" id="toc-retrieve" class="nav-link" data-scroll-target="#retrieve">Retrieve</a></li>
   <li><a href="#manage-with-wildtrax" id="toc-manage-with-wildtrax" class="nav-link" data-scroll-target="#manage-with-wildtrax">Manage with WildTrax</a>
-  <ul class="collapse">
+  <ul>
   <li><a href="#create-an-organization" id="toc-create-an-organization" class="nav-link" data-scroll-target="#create-an-organization">Create an Organization</a></li>
   <li><a href="#upload-recordings" id="toc-upload-recordings" class="nav-link" data-scroll-target="#upload-recordings">Upload recordings</a></li>
   </ul></li>
@@ -275,17 +279,7 @@ Table&nbsp;1: Equipment required for ARU deployment
 <figcaption>ARU status screen</figcaption>
 </figure>
 </div>
-<p>Once you have paired the next step is to set a schedule. For this pilot, select <strong>Record birds/frogs for 5 minutes of every hour</strong>. At this setting:</p>
-<ul>
-<li>The recorder has roughly <strong>35 recording days</strong> before the SD card fills up.</li>
-<li>The batteries should last approximately <strong>5 months</strong> in the field.</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="schedule-editor.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Schedule editor"><img src="schedule-editor.png" class="img-fluid figure-img" alt="Schedule editor"></a></p>
-<figcaption>Schedule editor</figcaption>
-</figure>
-</div>
+<p>Once you have paired the next step is to set a schedule. For this pilot, select <strong>Record birds/frogs for 5 minutes of every hour</strong>. We will not change any of the settings related to frequency range (kHz) or gain (dB) as they are already optimized for bioacoustic and soundscape data collection. Units have also been calibrating prior to deployment by <a href="https://sensr.ca">SENSR</a> staff.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -297,15 +291,26 @@ Table&nbsp;1: Equipment required for ARU deployment
 </div>
 <div class="callout-body-container callout-body">
 <p>Five minutes per hour balances data volume against battery and data storage limits, while still sampling activity across the full diel cycle, which is useful for a first pilot where deployment length, species and retrieval logistics aren’t yet fully known.</p>
+<ul>
+<li>The recorder has roughly <strong>35 recording days</strong> before a 32GB SD card fills up.</li>
+<li>8 AA alkaline batteries should last approximately <strong>5 months</strong> in the field.</li>
+</ul>
 </div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="schedule-editor.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Schedule editor"><img src="schedule-editor.png" class="img-fluid figure-img" alt="Schedule editor"></a></p>
+<figcaption>Schedule editor</figcaption>
+</figure>
 </div>
 </section>
 <section id="site-selection-and-mounting" class="level3">
 <h3 class="anchored" data-anchor-id="site-selection-and-mounting">Site selection and mounting</h3>
-<p><strong>Open, treeless environment:</strong></p>
+<section id="open-treeless-environment" class="level4">
+<h4 class="anchored" data-anchor-id="open-treeless-environment">Open, treeless environment</h4>
 <ul>
 <li>Mount the ARU on a wooden stake or metal rebar, driven at least <strong>1/3 of its length</strong> into the ground to keep it stable.</li>
-<li>Position the unit <strong>0.5–1 m above the ground</strong> — high enough to reduce wind interference with the microphones.</li>
+<li>Position the unit <strong>0.5-1 m above the ground</strong> high enough to reduce wind interference with the microphones.</li>
 <li>Orient the microphones <strong>against the direction of prevailing wind</strong> to reduce wind noise in recordings.</li>
 <li>In areas where wildlife may disturb the unit, a metal security cage can be used (<span class="citation" data-cites="ABMI2019ARUProtocols">Alberta Biodiversity Monitoring Institute (<a href="#ref-ABMI2019ARUProtocols" role="doc-biblioref">2019</a>)</span>).</li>
 </ul>
@@ -315,7 +320,9 @@ Table&nbsp;1: Equipment required for ARU deployment
 <figcaption>Example deployment setup in an open environment using agronomy cages to protect the unit against livestock damage.</figcaption>
 </figure>
 </div>
-<p><strong>Treed environment:</strong></p>
+</section>
+<section id="treed-environment" class="level4">
+<h4 class="anchored" data-anchor-id="treed-environment">Treed environment</h4>
 <ul>
 <li>Secure the unit to the trunk with screws or a locking security cable.</li>
 <li>Mount at <strong>1.5 m height</strong>, facing <strong>north</strong>, this is the standard orientation used across the pilot, making it easier to compare recordings and determine sound direction across sites and also limits direct sun exposure on the unit in the norther hemisphere.</li>
@@ -341,6 +348,7 @@ Note
 </div>
 </div>
 </section>
+</section>
 <section id="finalize-the-deployment" class="level3">
 <h3 class="anchored" data-anchor-id="finalize-the-deployment">Finalize the deployment</h3>
 <ol type="1">
@@ -357,7 +365,7 @@ Note
 <li>Open the unit’s lid and press and hold the <strong>Bluetooth pairing button</strong>.</li>
 <li>Open the Configurator app and locate the unit to re-pair.</li>
 <li>Check <strong>battery level</strong> and <strong>SD card usage</strong> to confirm recordings were captured successfully.</li>
-<li><strong>Turn the unit off before removing the SD card</strong> — always power down first to avoid file corruption.</li>
+<li><strong>Turn the unit off before removing the SD card</strong>, always power down first to avoid file corruption.</li>
 <li>Disassemble the unit from its mount (stake or tree), whichever setup was used.</li>
 </ol>
 <div class="callout callout-style-default callout-warning callout-titled">
