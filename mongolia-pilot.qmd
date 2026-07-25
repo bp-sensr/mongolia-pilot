@@ -4,9 +4,10 @@ format:
   html:
     grid:
       margin-width: 150px
-theme: lux
+theme: litera
 page-layout: article
 date: today
+lightbox: true
 author: 
   - name: "Alex MacPhail, Director, SENSR"
     affiliation:
@@ -50,9 +51,9 @@ The SM Mini 2 is built for this kind of unattended deployment:
 - **Bluetooth configuration** via the free Song Meter Configurator app (iOS/Android), so the unit can be set up and checked without opening the housing.
 - **Preset recording schedules** covering common monitoring use cases (e.g., dawn chorus, continuous recording, hourly sampling), so a unit can be deployed without writing a custom schedule from scratch.
 
-## Deploy
+[**Wildlife Acoustics Song Meter Mini 2 User Guide**](https://traps.com.au/wp-content/uploads/2024/05/Song-Meter-Mini-2_User-Guide_mobile-friendly_2024-02-27-en.pdf).
 
-For this pilot, use the **default schedules provided in the Configurator app** rather than a custom schedule, this keeps setup consistent across all units and observers.
+## Deploy
 
 ### Gear Checklist
 
@@ -102,17 +103,39 @@ kable(
   column_spec(2, width = "65%")
 ```
 
+For this pilot, use the default schedules provided in the [Songmeter Configurator  App](https://www.wildlifeacoustics.com/resources/video-tutorials/song-meter-mini-2/en/song-meter-mini-2-song-meter-mini-2-quick-start) rather than a custom schedule, this keeps setup consistent across all units and observers.
+
+* [Android](https://play.google.com/store/apps/details?id=com.wildlifeacoustics.SongMeterMiniConfigurator&hl=en_CA)
+* [AppStore](https://apps.apple.com/ca/app/song-meter-configurator/id1459516313)
+
+![](configurator.jpeg)
+
 ### Pairing an ARU to the Configurator App
 
-- Turn on the ARU and hold the pairing button until the flashing light appears, indicating pairing
-- Ensure Bluetoooh is enabled on your phone, open the Songmeter Configurator app, eand scan to pair nearby ARUs. Select the ARU and connect
+![Interior view panel of the SM Mini 2. 1) Guide Key 2) Control Panel 3) Battery Compartment 4) SD Card 5) Right Microphone where the stereo microphone is attached](open.png)
+![Control Panel close view. 1) ON/OFF switch 2) PAIR/STATUS button 3) FUNCTION/STATUS button 4) FUNCTION button](panel.png)
+
+- Unlatch and open the lid
+- Insert batteries
+- Insert the SD card
+- Slide the ON/OFF switch to ON
+- Ensure Bluetooth is enabled on your phone
+- Open the Song Meter Configurator app; press and hold the PAIR/STATUS button on the Song Meter for 3 seconds; the Bluetooth LED will blink green
+- In the app Recorders screen, the PAIR icon is displayed next to the Song Meter Mini 2; tap the PAIR icon; the icon will turn green when successful
+- Tap YES to automatically set the recorder's time zone to your mobile device's time zone
+
+![Recorders screen when pairing the ARU](pairing.png)
 
 ### Choose a schedule
 
-Once you have paired the next step is to set a schedule. For this pilot, select **"Record birds/frogs for 5 minutes of every hour."** At this setting:
+![ARU status screen](status-screen.png)
+
+Once you have paired the next step is to set a schedule. For this pilot, select **Record birds/frogs for 5 minutes of every hour**. At this setting:
 
 - The recorder has roughly **35 recording days** before the SD card fills up.
 - The batteries should last approximately **5 months** in the field.
+
+![Schedule editor](schedule-editor.png)
 
 ::: callout-tip
 ## Why this schedule
@@ -127,14 +150,22 @@ Five minutes per hour balances data volume against battery and data storage limi
 - Mount the ARU on a wooden stake or metal rebar, driven at least **1/3 of its length** into the ground to keep it stable.
 - Position the unit **0.5–1 m above the ground** — high enough to reduce wind interference with the microphones.
 - Orient the microphones **against the direction of prevailing wind** to reduce wind noise in recordings.
-- In areas where wildlife may disturb the unit, a metal security cage can be used.
+- In areas where wildlife may disturb the unit, a metal security cage can be used (@ABMI2019ARUProtocols).
+
+![Example deployment setup in an open environment using agronomy cages to protect the unit against livestock damage.](deploy-open.png)
 
 **Treed environment:**
 
 - Secure the unit to the trunk with screws or a locking security cable.
-- Mount at **1.5 m height**, facing **north** — this is the standard orientation used across the pilot, making it easier to compare recordings and determine sound direction across sites.
+- Mount at **1.5 m height**, facing **north**, this is the standard orientation used across the pilot, making it easier to compare recordings and determine sound direction across sites and also limits direct sun exposure on the unit in the norther hemisphere.
 
 ![A Wildlife Acoustics Songmeter SM Mini 2 ARU deployment in the spring of 2026 in Alberta in a treed environment](sensraru.jpeg)
+
+::: callout-note
+A third option exists if ARUs are deployed in wetland environments (@ABMI2019ARUProtocols).
+ 
+![Wetland deployment](deploy-wet.png).
+:::
 
 ### Finalize the deployment
 
@@ -159,7 +190,7 @@ Never remove the SD card while the unit is powered on. Doing so can corrupt in-p
 
 ## Manage with WildTrax
 
-[WildTrax](https://www.wildtrax.ca) is the online platform used to store, process, and share ARU recordings collected during this pilot. It is software platform managed and developed in partnership by the [Alberta Biodiversity Monitoring Institute](abmi.ca). Over 600 Organizations worldwide use WildTrax for their environmental sensor data and co-benefits. WildTrax allows you to extract the soundscape and species information from your recordings while managing the associated metadata and allowing you to share and combine data with other in a harmonized way.
+[WildTrax; @MacPhail2026_avian](https://www.wildtrax.ca) is the online platform used to store, process, and share ARU recordings collected during this pilot. It is software platform managed and developed in partnership by the [Alberta Biodiversity Monitoring Institute](abmi.ca). Over 600 Organizations worldwide use WildTrax for their environmental sensor data and co-benefits. WildTrax allows you to extract the soundscape and species information from your recordings while managing the associated metadata and allowing you to share and combine data with other in a harmonized way.
 
 Follow the [WildTrax Guide Basics](https://portal.wildtrax.ca/guide#sec-the-basics) section on how to Get Started.
 
