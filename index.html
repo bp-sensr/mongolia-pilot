@@ -56,7 +56,10 @@ div.csl-indent {
 <link href="mongolia-pilot_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="mongolia-pilot_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="mongolia-pilot_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="mongolia-pilot_files/libs/bootstrap/bootstrap-39a7b4c941d3885a8e467a4c1fbdaf40.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="mongolia-pilot_files/libs/bootstrap/bootstrap-827925bab5c0c65c97d806e9cc8a9476.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="mongolia-pilot_files/libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="mongolia-pilot_files/libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="mongolia-pilot_files/libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script src="mongolia-pilot_files/libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="mongolia-pilot_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
@@ -75,16 +78,22 @@ div.csl-indent {
   <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
   <li><a href="#understand" id="toc-understand" class="nav-link" data-scroll-target="#understand">Understand</a></li>
   <li><a href="#deploy" id="toc-deploy" class="nav-link" data-scroll-target="#deploy">Deploy</a>
-  <ul class="collapse">
+  <ul>
   <li><a href="#gear-checklist" id="toc-gear-checklist" class="nav-link" data-scroll-target="#gear-checklist">Gear Checklist</a></li>
   <li><a href="#pairing-an-aru-to-the-configurator-app" id="toc-pairing-an-aru-to-the-configurator-app" class="nav-link" data-scroll-target="#pairing-an-aru-to-the-configurator-app">Pairing an ARU to the Configurator App</a></li>
   <li><a href="#choose-a-schedule" id="toc-choose-a-schedule" class="nav-link" data-scroll-target="#choose-a-schedule">Choose a schedule</a></li>
-  <li><a href="#site-selection-and-mounting" id="toc-site-selection-and-mounting" class="nav-link" data-scroll-target="#site-selection-and-mounting">Site selection and mounting</a></li>
+  <li><a href="#location-naming" id="toc-location-naming" class="nav-link" data-scroll-target="#location-naming">Location naming</a></li>
+  <li><a href="#site-selection-and-mounting" id="toc-site-selection-and-mounting" class="nav-link" data-scroll-target="#site-selection-and-mounting">Site selection and mounting</a>
+  <ul class="collapse">
+  <li><a href="#open-treeless-environment" id="toc-open-treeless-environment" class="nav-link" data-scroll-target="#open-treeless-environment">Open, treeless environment</a></li>
+  <li><a href="#treed-environment" id="toc-treed-environment" class="nav-link" data-scroll-target="#treed-environment">Treed environment</a></li>
+  </ul></li>
   <li><a href="#finalize-the-deployment" id="toc-finalize-the-deployment" class="nav-link" data-scroll-target="#finalize-the-deployment">Finalize the deployment</a></li>
+  <li><a href="#location-photos" id="toc-location-photos" class="nav-link" data-scroll-target="#location-photos">Location photos</a></li>
   </ul></li>
   <li><a href="#retrieve" id="toc-retrieve" class="nav-link" data-scroll-target="#retrieve">Retrieve</a></li>
   <li><a href="#manage-with-wildtrax" id="toc-manage-with-wildtrax" class="nav-link" data-scroll-target="#manage-with-wildtrax">Manage with WildTrax</a>
-  <ul class="collapse">
+  <ul>
   <li><a href="#create-an-organization" id="toc-create-an-organization" class="nav-link" data-scroll-target="#create-an-organization">Create an Organization</a></li>
   <li><a href="#upload-recordings" id="toc-upload-recordings" class="nav-link" data-scroll-target="#upload-recordings">Upload recordings</a></li>
   </ul></li>
@@ -161,7 +170,7 @@ div.csl-indent {
 <div id="fig-aru-detection" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-aru-detection-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="figure-cite1.jpg" class="img-fluid figure-img">
+<a href="figure-cite1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1: Example of an animal vocalizing and subsequent detection by an ARU; Gibb et al.&nbsp;2018"><img src="figure-cite1.jpg" class="img-fluid figure-img"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-aru-detection-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;1: Example of an animal vocalizing and subsequent detection by an ARU; Gibb et al.&nbsp;2018
@@ -175,10 +184,10 @@ Figure&nbsp;1: Example of an animal vocalizing and subsequent detection by an AR
 <li><strong>Bluetooth configuration</strong> via the free Song Meter Configurator app (iOS/Android), so the unit can be set up and checked without opening the housing.</li>
 <li><strong>Preset recording schedules</strong> covering common monitoring use cases (e.g., dawn chorus, continuous recording, hourly sampling), so a unit can be deployed without writing a custom schedule from scratch.</li>
 </ul>
+<p><a href="https://traps.com.au/wp-content/uploads/2024/05/Song-Meter-Mini-2_User-Guide_mobile-friendly_2024-02-27-en.pdf"><strong>Wildlife Acoustics Song Meter Mini 2 User Guide</strong></a>.</p>
 </section>
 <section id="deploy" class="level2">
 <h2 class="anchored" data-anchor-id="deploy">Deploy</h2>
-<p>For this pilot, use the <strong>default schedules provided in the Configurator app</strong> rather than a custom schedule, this keeps setup consistent across all units and observers.</p>
 <section id="gear-checklist" class="level3">
 <h3 class="anchored" data-anchor-id="gear-checklist">Gear Checklist</h3>
 <p>For a single ARU unit you will need the equipment identified in <a href="#tbl-deployment-equipment" class="quarto-xref">Table&nbsp;1</a>.</p>
@@ -237,21 +246,42 @@ Table&nbsp;1: Equipment required for ARU deployment
 </figure>
 </div>
 </div>
+<p>For this pilot, use the default schedules provided in the <a href="https://www.wildlifeacoustics.com/resources/video-tutorials/song-meter-mini-2/en/song-meter-mini-2-song-meter-mini-2-quick-start">Songmeter Configurator App</a> rather than a custom schedule, this keeps setup consistent across all units and observers.</p>
+<ul>
+<li><a href="https://play.google.com/store/apps/details?id=com.wildlifeacoustics.SongMeterMiniConfigurator&amp;hl=en_CA">Android</a></li>
+<li><a href="https://apps.apple.com/ca/app/song-meter-configurator/id1459516313">AppStore</a></li>
+</ul>
+<p><a href="configurator.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="configurator.jpeg" class="img-fluid"></a></p>
 </section>
 <section id="pairing-an-aru-to-the-configurator-app" class="level3">
 <h3 class="anchored" data-anchor-id="pairing-an-aru-to-the-configurator-app">Pairing an ARU to the Configurator App</h3>
+<p><img src="open.png" class="img-fluid" alt="Interior view panel of the SM Mini 2. 1) Guide Key 2) Control Panel 3) Battery Compartment 4) SD Card 5) Right Microphone where the stereo microphone is attached"> <img src="panel.png" class="img-fluid" alt="Control Panel close view. 1) ON/OFF switch 2) PAIR/STATUS button 3) FUNCTION/STATUS button 4) FUNCTION button"></p>
 <ul>
-<li>Turn on the ARU and hold the pairing button until the flashing light appears, indicating pairing</li>
-<li>Ensure Bluetoooh is enabled on your phone, open the Songmeter Configurator app, eand scan to pair nearby ARUs. Select the ARU and connect</li>
+<li>Unlatch and open the lid</li>
+<li>Insert batteries</li>
+<li>Insert the SD card</li>
+<li>Slide the ON/OFF switch to ON</li>
+<li>Ensure Bluetooth is enabled on your phone</li>
+<li>Open the Song Meter Configurator app; press and hold the PAIR/STATUS button on the Song Meter for 3 seconds; the Bluetooth LED will blink green</li>
+<li>In the app Recorders screen, the PAIR icon is displayed next to the Song Meter Mini 2; tap the PAIR icon; the icon will turn green when successful</li>
+<li>Tap YES to automatically set the recorder’s time zone to your mobile device’s time zone</li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="pairing.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Recorders screen when pairing the ARU"><img src="pairing.png" class="img-fluid figure-img" alt="Recorders screen when pairing the ARU"></a></p>
+<figcaption>Recorders screen when pairing the ARU</figcaption>
+</figure>
+</div>
 </section>
 <section id="choose-a-schedule" class="level3">
 <h3 class="anchored" data-anchor-id="choose-a-schedule">Choose a schedule</h3>
-<p>Once you have paired the next step is to set a schedule. For this pilot, select <strong>“Record birds/frogs for 5 minutes of every hour.”</strong> At this setting:</p>
-<ul>
-<li>The recorder has roughly <strong>35 recording days</strong> before the SD card fills up.</li>
-<li>The batteries should last approximately <strong>5 months</strong> in the field.</li>
-</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="status-screen.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="ARU status screen"><img src="status-screen.png" class="img-fluid figure-img" alt="ARU status screen"></a></p>
+<figcaption>ARU status screen</figcaption>
+</figure>
+</div>
+<p>Once you have paired the next step is to set a schedule. For this pilot, select <strong>Record birds/frogs for 5 minutes of every hour</strong>. We will not change any of the settings related to frequency range (kHz) or gain (dB) as they are already optimized for bioacoustic and soundscape data collection. Units have also been calibrating prior to deployment by <a href="https://sensr.ca">SENSR</a> staff.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -263,29 +293,86 @@ Table&nbsp;1: Equipment required for ARU deployment
 </div>
 <div class="callout-body-container callout-body">
 <p>Five minutes per hour balances data volume against battery and data storage limits, while still sampling activity across the full diel cycle, which is useful for a first pilot where deployment length, species and retrieval logistics aren’t yet fully known.</p>
+<ul>
+<li>The recorder has roughly <strong>35 recording days</strong> before a 32GB SD card fills up.</li>
+<li>8 AA alkaline batteries should last approximately <strong>5 months</strong> in the field.</li>
+</ul>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="schedule-editor.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Schedule editor"><img src="schedule-editor.png" class="img-fluid figure-img" alt="Schedule editor"></a></p>
+<figcaption>Schedule editor</figcaption>
+</figure>
+</div>
+</section>
+<section id="location-naming" class="level3">
+<h3 class="anchored" data-anchor-id="location-naming">Location naming</h3>
+<p>Each recorder can be assigned a <strong>location</strong> to identify the deployment site. Choose a name that reflects the site’s location, treatment, sampling design, or other meaningful identifier for your project.</p>
+<p>Location names are limited to <strong>12 characters</strong>. Examples include:</p>
+<ul>
+<li><code>FROG-SITE1</code></li>
+<li><code>BIRDS_GRD1</code></li>
+<li><code>BG-1-2-4</code></li>
+</ul>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A <strong>location</strong> is required when uploading recordings to <a href="https://wildtrax.ca">WildTrax</a>. The location name links uploaded media to the correct deployment coordinates and metadata. See more under WildTrax’s User Guide for <a href="https://portal.wildtrax.ca/guide#sec-locations">Locations</a>.</p>
 </div>
 </div>
 </section>
 <section id="site-selection-and-mounting" class="level3">
 <h3 class="anchored" data-anchor-id="site-selection-and-mounting">Site selection and mounting</h3>
-<p><strong>Open, treeless environment:</strong></p>
+<section id="open-treeless-environment" class="level4">
+<h4 class="anchored" data-anchor-id="open-treeless-environment">Open, treeless environment</h4>
 <ul>
 <li>Mount the ARU on a wooden stake or metal rebar, driven at least <strong>1/3 of its length</strong> into the ground to keep it stable.</li>
-<li>Position the unit <strong>0.5–1 m above the ground</strong> — high enough to reduce wind interference with the microphones.</li>
+<li>Position the unit <strong>0.5-1 m above the ground</strong> high enough to reduce wind interference with the microphones.</li>
 <li>Orient the microphones <strong>against the direction of prevailing wind</strong> to reduce wind noise in recordings.</li>
-<li>In areas where wildlife may disturb the unit, a metal security cage can be used.</li>
-</ul>
-<p><strong>Treed environment:</strong></p>
-<ul>
-<li>Secure the unit to the trunk with screws or a locking security cable.</li>
-<li>Mount at <strong>1.5 m height</strong>, facing <strong>north</strong> — this is the standard orientation used across the pilot, making it easier to compare recordings and determine sound direction across sites.</li>
+<li>In areas where wildlife may disturb the unit, a metal security cage can be used (<span class="citation" data-cites="ABMI2019ARUProtocols">Alberta Biodiversity Monitoring Institute (<a href="#ref-ABMI2019ARUProtocols" role="doc-biblioref">2019</a>)</span>).</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="sensraru.jpeg" class="img-fluid figure-img"></p>
+<p><a href="deploy-open.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Example deployment setup in an open environment using agronomy cages to protect the unit against livestock damage."><img src="deploy-open.png" class="img-fluid figure-img" alt="Example deployment setup in an open environment using agronomy cages to protect the unit against livestock damage."></a></p>
+<figcaption>Example deployment setup in an open environment using agronomy cages to protect the unit against livestock damage.</figcaption>
+</figure>
+</div>
+</section>
+<section id="treed-environment" class="level4">
+<h4 class="anchored" data-anchor-id="treed-environment">Treed environment</h4>
+<ul>
+<li>Secure the unit to the trunk with screws or a locking security cable.</li>
+<li>Mount at <strong>1.5 m height</strong>, facing <strong>north</strong>, this is the standard orientation used across the pilot, making it easier to compare recordings and determine sound direction across sites and also limits direct sun exposure on the unit in the norther hemisphere.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="sensraru.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="A Wildlife Acoustics Songmeter SM Mini 2 ARU deployment in the spring of 2026 in Alberta in a treed environment"><img src="sensraru.jpeg" class="img-fluid figure-img" alt="A Wildlife Acoustics Songmeter SM Mini 2 ARU deployment in the spring of 2026 in Alberta in a treed environment"></a></p>
 <figcaption>A Wildlife Acoustics Songmeter SM Mini 2 ARU deployment in the spring of 2026 in Alberta in a treed environment</figcaption>
 </figure>
 </div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A third option exists if ARUs are deployed in wetland environments (<span class="citation" data-cites="ABMI2019ARUProtocols">Alberta Biodiversity Monitoring Institute (<a href="#ref-ABMI2019ARUProtocols" role="doc-biblioref">2019</a>)</span>).</p>
+<p><img src="deploy-wet.png" class="img-fluid" alt="Wetland deployment">.</p>
+</div>
+</div>
+</section>
 </section>
 <section id="finalize-the-deployment" class="level3">
 <h3 class="anchored" data-anchor-id="finalize-the-deployment">Finalize the deployment</h3>
@@ -296,43 +383,54 @@ Table&nbsp;1: Equipment required for ARU deployment
 <li>Record the site ID, GPS coordinates, date/time, and any habitat notes on the data sheet.</li>
 </ol>
 </section>
-</section>
-<section id="retrieve" class="level2">
-<h2 class="anchored" data-anchor-id="retrieve">Retrieve</h2>
-<ol type="1">
-<li>Open the unit’s lid and press and hold the <strong>Bluetooth pairing button</strong>.</li>
-<li>Open the Configurator app and locate the unit to re-pair.</li>
-<li>Check <strong>battery level</strong> and <strong>SD card usage</strong> to confirm recordings were captured successfully.</li>
-<li><strong>Turn the unit off before removing the SD card</strong> — always power down first to avoid file corruption.</li>
-<li>Disassemble the unit from its mount (stake or tree), whichever setup was used.</li>
-</ol>
-<div class="callout callout-style-default callout-warning callout-titled">
+<section id="location-photos" class="level3">
+<h3 class="anchored" data-anchor-id="location-photos">Location photos</h3>
+<p><strong>Location photos</strong> are photos taken as a means to record the landscape around where a sensor was deployed. <a href="https://wildtrax.ca">WildTrax</a> has the ability to upload, store and manage location photos and attribute basic metadata for them.</p>
+<p>Locations photos are recommended in the following format:</p>
+<ul>
+<li>Cardinal directions: N, E, S, W</li>
+<li>Zenith (straight up) and nadir (straight down)</li>
+<li>A set up photo and a data sheet photo</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Always power off first
+<span class="screen-reader-only">Note</span>Location metadata
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Never remove the SD card while the unit is powered on. Doing so can corrupt in-progress recordings or the file system on the card.</p>
+<p>WildTrax can store a wide range of deployment and site metadata. Record any information that may be relevant to your project or future analyses, even if it is not currently supported by WildTrax. Additional metadata can always be maintained separately and linked to your deployments.</p>
 </div>
 </div>
 </section>
+</section>
+<section id="retrieve" class="level2">
+<h2 class="anchored" data-anchor-id="retrieve">Retrieve</h2>
+<ol type="1">
+<li>Open the unit’s lid and press and hold the PAIR/STATUS btton</li>
+<li>Open the Configurator app and locate the unit to re-pair.</li>
+<li>Check <strong>battery level</strong> and <strong>SD card usage</strong> to confirm recordings were captured successfully. Keep the SD stored in the unit until it can be safely transferred onto a computer.</li>
+<li><strong>Turn the unit off before removing the SD card</strong>, always power down first to avoid file corruption.</li>
+<li>Disassemble the unit from its mount (stake or tree), whichever setup was used.</li>
+</ol>
+</section>
 <section id="manage-with-wildtrax" class="level2">
 <h2 class="anchored" data-anchor-id="manage-with-wildtrax">Manage with WildTrax</h2>
-<p><a href="https://www.wildtrax.ca">WildTrax</a> is the online platform used to store, process, and share ARU recordings collected during this pilot. It is software platform managed and developed in partnership by the <a href="abmi.ca">Alberta Biodiversity Monitoring Institute</a>. Over 600 Organizations worldwide use WildTrax for their environmental sensor data and co-benefits. WildTrax allows you to extract the soundscape and species information from your recordings while managing the associated metadata and allowing you to share and combine data with other in a harmonized way.</p>
+<p><a href="https://www.wildtrax.ca">WildTrax; <span class="citation" data-cites="MacPhail2026_avian">MacPhail et al. (<span>2026</span>)</span></a> is the online platform used to store, process, and share ARU recordings collected during this pilot. It is software platform managed and developed in partnership by the <a href="abmi.ca">Alberta Biodiversity Monitoring Institute</a>. Over 600 Organizations worldwide use WildTrax for their environmental sensor data and co-benefits. WildTrax allows you to extract the soundscape and species information from your recordings while managing the associated metadata and allowing you to share and combine data with other in a harmonized way.</p>
 <p>Follow the <a href="https://portal.wildtrax.ca/guide#sec-the-basics">WildTrax Guide Basics</a> section on how to Get Started.</p>
 <section id="create-an-organization" class="level3">
 <h3 class="anchored" data-anchor-id="create-an-organization">Create an Organization</h3>
 <p><strong>Organizations</strong> bring together groups of researchers and users collaborating on diverse research initiatives. Organizations oversee equipment, manage locations and media, and have the ability to create projects using the media they own.</p>
-<p><img src="organizations.png" class="img-fluid"></p>
+<p><a href="organizations.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="organizations.png" class="img-fluid"></a></p>
 <p>Customize Organization settings such a <strong>data storage location</strong> for uploaded media (e.g.&nbsp;WildTrax DataCenter or Amazon Web Services), and setting appropriate data privacy metadata (e.g.&nbsp;buffering locations, setting user memberships).</p>
-<p><img src="organization-settings.png" class="img-fluid"></p>
+<p><a href="organization-settings.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="organization-settings.png" class="img-fluid"></a></p>
 </section>
 <section id="upload-recordings" class="level3">
 <h3 class="anchored" data-anchor-id="upload-recordings">Upload recordings</h3>
+<p><a href="recordings-tab.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="recordings-tab.png" class="img-fluid"></a></p>
 <ol type="1">
 <li>From the ARU project, use the upload tool to select the folder containing the recordings pulled from the SD card.</li>
 <li>WildTrax accepts the default <code>.wav</code> audio formats and configurations from the Wildlife Acoustics recordings.</li>
@@ -356,6 +454,9 @@ Table&nbsp;1: Equipment required for ARU deployment
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-ABMI2019ARUProtocols" class="csl-entry" role="listitem">
+Alberta Biodiversity Monitoring Institute. 2019. <span>“Terrestrial ABMI Autonomous Recording Unit (ARU) and Remote Camera Trap Protocols.”</span> Field Protocol. Alberta Biodiversity Monitoring Institute. <a href="https://abmi.ca/publication/565.html">https://abmi.ca/publication/565.html</a>.
+</div>
 <div id="ref-Gibb2019" class="csl-entry" role="listitem">
 Gibb, Ruth, Emma Browning, Paul Glover-Kapfer, and Kate E. Jones. 2019. <span>“Emerging Opportunities and Challenges for Passive Acoustics in Ecological Assessment and Monitoring.”</span> <em>Methods in Ecology and Evolution</em> 10: 169–85. <a href="https://doi.org/10.1111/2041-210X.13101">https://doi.org/10.1111/2041-210X.13101</a>.
 </div>
@@ -771,6 +872,38 @@ Shonfield, Julia, and Erin M Bayne. 2017. <span>“Autonomous Recording Units in
   });
   </script>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
