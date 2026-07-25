@@ -145,6 +145,20 @@ Five minutes per hour balances data volume against battery and data storage limi
 
 ![Schedule editor](schedule-editor.png)
 
+### Location naming
+
+Each recorder can be assigned a **location** to identify the deployment site. Choose a name that reflects the site's location, treatment, sampling design, or other meaningful identifier for your project.
+
+Location names are limited to **12 characters**. Examples include:
+
+- `FROG-SITE1`
+- `BIRDS_GRD1`
+- `BG-1-2-4`
+
+::: {.callout-warning}
+A **location** is required when uploading recordings to [WildTrax](https://wildtrax.ca). The location name links uploaded media to the correct deployment coordinates and metadata. See more under WildTrax's User Guide for [Locations](https://portal.wildtrax.ca/guide#sec-locations).
+:::
+
 ### Site selection and mounting
 
 #### Open, treeless environment
@@ -176,19 +190,29 @@ A third option exists if ARUs are deployed in wetland environments (@ABMI2019ARU
 3.  Disconnect / unpair from the Configurator app.
 4.  Record the site ID, GPS coordinates, date/time, and any habitat notes on the data sheet.
 
+### Location photos
+
+**Location photos** are photos taken as a means to record the landscape around where a sensor was deployed. [WildTrax](https://wildtrax.ca) has the ability to upload, store and manage location photos and attribute basic metadata for them.
+
+Locations photos are recommended in the following format:
+
+- Cardinal directions: N, E, S, W
+- Zenith (straight up) and nadir (straight down)
+- A set up photo and a data sheet photo
+
+::: {.callout-note}
+## Location metadata
+
+WildTrax can store a wide range of deployment and site metadata. Record any information that may be relevant to your project or future analyses, even if it is not currently supported by WildTrax. Additional metadata can always be maintained separately and linked to your deployments.
+:::
+
 ## Retrieve
 
-1.  Open the unit's lid and press and hold the **Bluetooth pairing button**.
+1.  Open the unit's lid and press and hold the PAIR/STATUS btton
 2.  Open the Configurator app and locate the unit to re-pair.
-3.  Check **battery level** and **SD card usage** to confirm recordings were captured successfully.
+3.  Check **battery level** and **SD card usage** to confirm recordings were captured successfully. Keep the SD stored in the unit until it can be safely transferred onto a computer.
 4.  **Turn the unit off before removing the SD card**, always power down first to avoid file corruption.
 5.  Disassemble the unit from its mount (stake or tree), whichever setup was used.
-
-::: callout-warning
-## Always power off first
-
-Never remove the SD card while the unit is powered on. Doing so can corrupt in-progress recordings or the file system on the card.
-:::
 
 ## Manage with WildTrax
 
@@ -207,6 +231,8 @@ Customize Organization settings such a **data storage location** for uploaded me
 ![](organization-settings.png)
 
 ### Upload recordings
+
+![](recordings-tab.png)
 
 1.  From the ARU project, use the upload tool to select the folder containing the recordings pulled from the SD card.
 2.  WildTrax accepts the default `.wav` audio formats and configurations from the Wildlife Acoustics recordings.
