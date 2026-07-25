@@ -4,15 +4,6 @@ format:
   html:
     grid:
       margin-width: 150px
-  pdf:
-    toc: true
-    toc-depth: 3
-    number-sections: true
-    colorlinks: true
-    prefer-html: true
-    geometry:
-      - margin=1in
-    papersize: letter
 theme: lux
 page-layout: article
 date: today
